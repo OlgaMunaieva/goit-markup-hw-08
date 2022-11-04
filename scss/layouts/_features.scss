@@ -1,0 +1,33 @@
+.features {
+  &__list {
+    @include flex(flex-start, $gp: none);
+    // display: flex;
+    // align-items: flex-start;
+    // justify-content: space-between;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__container {
+    width: 270px;
+    height: 120px;
+    @include flex($jc: space-between, $gp: none);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin-bottom: 30px;
+    background: var(--secondary-background-color-next);
+    border-radius: 4px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+  &__text {
+    line-height: 1.71;
+    color: var(--secondary-text-color-main);
+  }
+}
