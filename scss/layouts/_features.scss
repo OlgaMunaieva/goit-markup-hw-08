@@ -11,7 +11,7 @@
   &__container {
     width: 270px;
     height: 120px;
-    @include flex($jc: space-between, $gp: none);
+    @include flex($jc: center, $gp: none);
     // display: flex;
     // justify-content: center;
     // align-items: center;
