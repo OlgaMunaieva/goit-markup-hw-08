@@ -1,5 +1,7 @@
 .cos {
+  // @include flex($ai: center, $jc: center, $gp: 10px);
   display: flex;
+  justify-content: center;
   gap: 10px;
   &__link {
     width: 44px;

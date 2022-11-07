@@ -3,4 +3,40 @@
   align-items: $ai;
   justify-content: $jc;
   gap: $gp;
+  flex-wrap: wrap;
+}
+@mixin mobile {
+  @media screen and (min-width: 481px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin desktop-more {
+  @media screen and (min-width: 1601px) {
+    @content;
+  }
+}
+
+@mixin calc($count, $gap) {
+  width: calc((100% - $gap * ($count - 1)) / $count);
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
 }
