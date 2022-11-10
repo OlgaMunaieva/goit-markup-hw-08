@@ -3,8 +3,9 @@
   // display: flex;
   // gap: 30px;
   &__item {
+    @include calc(2, 30px);
     @include mobile {
-      @include calc(2, 30px);
+      @include calc(3, 30px);
     }
     @include tablet {
       @include calc(3, 30px);
