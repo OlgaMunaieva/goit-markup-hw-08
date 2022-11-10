@@ -4,10 +4,13 @@
   // align-items: center;
   // justify-content: space-between;
   &__list {
-    display: flex;
-    margin-left: 93px;
-    width: 281px;
-    justify-content: space-between;
+    display: none;
+    @include tablet {
+      display: flex;
+      margin-left: 93px;
+      width: 281px;
+      justify-content: space-between;
+    }
   }
   &__link {
     position: relative;

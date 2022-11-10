@@ -90,11 +90,24 @@ img {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color-opposit);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .logo__accent {
   color: var(--color-accent);
@@ -117,10 +130,15 @@ img {
   flex-wrap: wrap;
 }
 .nav__list {
-  display: flex;
-  margin-left: 93px;
-  width: 281px;
-  justify-content: space-between;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    margin-left: 93px;
+    width: 281px;
+    justify-content: space-between;
+  }
 }
 .nav__link {
   position: relative;
@@ -143,13 +161,28 @@ img {
 }
 
 .contacts {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 .contacts__item {
   display: block;
 }
-.contacts__item:last-child {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts__item:last-child {
+    margin-left: 50px;
+  }
 }
 .contacts__link {
   font-weight: 500;
@@ -161,9 +194,13 @@ img {
   justify-content: none;
   gap: 10px;
   flex-wrap: wrap;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: var(--transition-hover-focus-color), var(--transition-hover-focus-fill);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--color-accent);
@@ -488,6 +525,7 @@ img {
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .accent::after {
@@ -499,6 +537,23 @@ img {
   width: 100%;
   height: 4px;
   background-color: var(--color-accent);
+}
+
+.menu__open {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-width: 0;
+  text-align: center;
+  background-color: var(--primary-background-color-main);
+  display: block;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .menu__open {
+    display: none;
+  }
 }
 
 .hero {

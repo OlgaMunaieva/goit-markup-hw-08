@@ -1,9 +1,20 @@
 .contacts {
-  display: flex;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 0;
+  }
   &__item {
     display: block;
     &:last-child {
-      margin-left: 50px;
+      @include desktop {
+        margin-left: 50px;
+      }
     }
   }
   &__link {
@@ -14,9 +25,12 @@
     @include flex($ai: center, $jc: none);
     // display: flex;
     // align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
     // gap: 10px;
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     transition: var(--transition-hover-focus-color),
       var(--transition-hover-focus-fill);
