@@ -10,9 +10,6 @@
     @include mobile {
       @include calc(2, 30px);
     }
-    @include tablet {
-      margin-bottom: 30px;
-    }
     @include desktop {
       @include calc(4, 30px);
     }

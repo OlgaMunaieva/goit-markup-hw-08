@@ -18,6 +18,7 @@
     }
     @include desktop {
       margin-bottom: 0;
+      margin-right: 93px;
     }
   }
   &__address {
@@ -40,11 +41,8 @@
     color: var(--primary-text-color-opposit);
 
     margin-bottom: 20px;
-    margin-top: 60px;
     text-align: center;
-    @include tablet {
-      margin-top: 0;
-    }
+
     @include desktop {
       text-align: start;
     }
@@ -52,8 +50,18 @@
   &__cos {
     margin-right: auto;
     margin-left: auto;
-    @include desktop {
-      margin-right: 93px;
+    margin-top: 60px;
+    @include tablet {
+      margin-top: 0;
+    }
+    // @include desktop {
+    //   margin-right: 93px;
+    // }
+  }
+  &__form {
+    margin-top: 60px;
+    @include tablet {
+      margin-top: 0;
     }
   }
   &__label {

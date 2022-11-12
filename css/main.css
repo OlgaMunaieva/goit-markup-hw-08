@@ -240,12 +240,23 @@ img {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 .title--margin {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title--margin {
+    margin-bottom: 50px;
+  }
 }
 
 .visually-hidden {
@@ -372,6 +383,7 @@ img {
 .modal {
   position: absolute;
   width: 100%;
+  max-width: 450px;
   height: 609px;
   scroll-snap-align: center;
   background: var(--primary-background-color-main);
@@ -392,6 +404,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -779,11 +792,6 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
-  .features__item {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 90px) / 4);
@@ -875,11 +883,6 @@ img {
 @media screen and (min-width: 481px) {
   .team__item {
     width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1059,6 +1062,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__combiner {
     margin-bottom: 0;
+    margin-right: 93px;
   }
 }
 .footer__address {
@@ -1080,13 +1084,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-text-color-opposit);
   margin-bottom: 20px;
-  margin-top: 60px;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .footer__appeal {
-    margin-top: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__appeal {
@@ -1096,10 +1094,19 @@ img {
 .footer__cos {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__cos {
-    margin-right: 93px;
+    margin-top: 0;
+  }
+}
+.footer__form {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__form {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
