@@ -2,13 +2,14 @@
   position: absolute;
 
   width: 100%;
-  min-height: 609px;
+  height: 609px;
+  scroll-snap-align: center;
   @include mobile {
     width: 450px;
   }
   @include desktop {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 
   background: var(--primary-background-color-main);

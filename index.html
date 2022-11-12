@@ -51,7 +51,7 @@
                         </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="menu__open" type="button">
+            <button class="menu__open" type="button" data-menu-open>
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -557,7 +557,54 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-menu>
+        <div class="menu">
+            <button class="menu__close" type="button" data-menu-close>
+                <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-close_24px"></use>
+                </svg>
+            </button>
+            <ul class="nav__list nav__list--menu list">
+                <li class="nav__item nav__item--menu">
+                    <a class="nav__link nav__link--menu link accent--menu" href="./index.html">Студія</a>
+                </li>
+                <li class="nav__item nav__item--menu">
+                    <a class="nav__link nav__link--menu link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav__item nav__item--menu">
+                    <a class="nav__link nav__link--menu link" href="#">Контакти</a>
+                </li>
+            </ul>
+            <div>
+                <ul class="contacts contacts--menu list">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--menu-tel link" href="tel:+380961111111">+38 096 111 11
+                            11</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--menu link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="cos-menu list">
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">Instagram</a>
+                    </li>
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">Twitter</a>
+                    </li>
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">Facebook</a>
+                    </li>
+                    <li class="cos-menu__item">
+                        <a href="#" class="cos-menu__link link">LinkedIn</a>
+                    </li>
+                </ul>
+                </di>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>
