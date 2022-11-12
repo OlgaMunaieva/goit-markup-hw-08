@@ -1,9 +1,18 @@
 .filter {
-  @include flex(none, center, 8px);
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  flex-wrap: wrap;
+  @include tablet {
+  }
+  // @include flex(none, center, 8px);
   // display: flex;
   // justify-content: center;
   margin-bottom: 50px;
   // gap: 8px;
+  @include tablet {
+    justify-content: center;
+  }
   &__btn {
     font-weight: 500;
     line-height: 1.62;

@@ -1,14 +1,32 @@
 .examples {
   display: flex;
-  min-width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
+  @include desktop {
+    min-width: 1170px;
+  }
   &__item {
-    flex-basis: calc((100% - 30px * 2) / 3);
-
+    flex-basis: 100%;
     transition: var(--transition-hover-focus-shadow-color);
+    @include mobile {
+      flex-basis: 450px;
+    }
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      flex-basis: calc((100% - 30px * 2) / 3);
+    }
+    &:nth-of-type(2n) {
+      @include tablet {
+        margin-right: 0;
+      }
+    }
     &:nth-of-type(3n) {
-      margin-right: 0;
+      @include desktop {
+        margin-right: 0;
+      }
     }
     &:hover,
     &:focus {
@@ -47,6 +65,7 @@
     border-top: none;
   }
   &__title {
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
