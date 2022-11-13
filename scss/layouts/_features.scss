@@ -8,6 +8,9 @@
   &__item {
     width: 100%;
     @include mobile {
+      width: 450px;
+    }
+    @include tablet {
       @include calc(2, 30px);
     }
     @include desktop {
@@ -34,9 +37,6 @@
     text-align: center;
 
     margin-bottom: 10px;
-    @include mobile {
-      text-align: left;
-    }
     @include tablet {
       text-align: left;
     }
