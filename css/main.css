@@ -714,7 +714,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0px 4px 4px var(--shadow-color);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -775,6 +774,9 @@ img {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
+}
+.hero__button:hover, .hero__button:focus {
+  box-shadow: 0px 4px 4px var(--shadow-color);
 }
 
 .features__list {
@@ -1159,6 +1161,9 @@ img {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+.footer__button:hover, .footer__button:focus {
+  box-shadow: 0px 4px 4px var(--shadow-color);
 }
 @media screen and (min-width: 1200px) {
   .footer__button {
